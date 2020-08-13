@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script>if(document.addEventListener){
+    document.addEventListener("DOMContentLoaded", function(){
+        loaded();
+    });
+} else if(document.attachEvent){
+    document.attachEvent("onreadystatechange", function(){
+        loaded();
+    });
+}
+
+function loaded(){
+    
+    setInterval(loop, 300);
+
+}
+
+var x = 0;
+
+var titleText = [ "|",
+
+                    "W|",
+                    "W |",
+                    "W H|",
+                    "W H |",
+                    "W H Y|",
+                    "W H Y |",
+                    "W H Y ?|"];
+
+
+function loop(){
+
+    document.getElementsByTagName("title")[0].innerHTML = titleText[x++%titleText.length];
+    
+
+}
+</script>
+       <style>
+       h1 {text-align: center;}
+       p {text-align: center;}
+       p {text-align: center;}
+       p {text-align: center;}
+       p {text-align: center;}
+       img {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       }
+      </style>
+     <title>Why?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <h1>About</h1>
+
+    <p>Just a random user on the internet</p>
+
+    <p><a href="https://discordapp.com">Cynaax#6158</a></p>
+
+    <p><a href="https://github.com/cynaax">github</a></p>
+
+    <p><a href="mailto:cynaax@gmail.com">email</a></p>
+
+    <img src="/Lainlaugh.gif">
+
+    <p><a href="/index.html">Go back</a></p>
+
+    <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=uURGxMp9k7E&t=11s#gsc.tab=0" frameborder="0" allowfullscreen></iframe>
+
+  </body>
+</html>
